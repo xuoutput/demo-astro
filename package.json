@@ -1,0 +1,24 @@
+{
+  "name": "demo-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prettier": "prettier -w ./src"
+  },
+  "dependencies": {
+    "astro": "^2.1.9"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-plugin-astro": "^0.26.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0"
+  }
+}
