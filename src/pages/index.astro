@@ -1,14 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
+// import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = 'Home Page';
 ---
 
-<Layout title={pageTitle}>
-  <Header />
+<BaseLayout pageTitle={pageTitle}>
   <main>
     <h1>Welcome to <span class='text-gradient'>{pageTitle}</span></h1>
     <p class='instructions'>
@@ -39,8 +36,7 @@ const pageTitle = 'Home Page';
       />
     </ul>
   </main>
-  <Footer />
-</Layout>
+</BaseLayout>
 
 <style>
   main {
