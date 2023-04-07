@@ -2,10 +2,12 @@
 // import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting.jsx';
 const pageTitle = 'Home Page';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+  <Greeting client:load messages={['Hi', 'Hello', 'Howdy', 'Hey there']} />
   <main>
     <h1>Welcome to <span class='text-gradient'>{pageTitle}</span></h1>
     <p class='instructions'>
